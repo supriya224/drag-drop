@@ -1,0 +1,99 @@
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    min-height:100vh ;
+    background-color: rgb(251, 251, 251);
+  }
+  
+  .left-container{  
+    /* display: flex; */
+    color: rgb(255, 255, 255);
+    /* background-color: #fcf8f8; */
+  }
+  /* .right-container{
+    display: flex;
+  } */
+
+  #left, #right{
+   
+    width: 300px;
+    min-height: 500px;
+    margin:20px;
+    border: 2px dashed #000000;
+   
+  }
+  h2{
+    color: rgb(0, 0, 0);
+  }
+  .list {
+    
+    height: 60px;
+    margin: 30px; 
+    background-color: rgb(225, 183, 183);
+    color: white;
+    padding: 10px;
+    align-items: center;
+    cursor: grab;
+  }
+  .btn{
+    /* display: flex; */
+    width:5rem;
+    height: 30px;
+    color: white;
+    background-color: rgb(225, 183, 183);
+    border-radius: 5px;
+    /* border: none; */
+    /* box-shadow: 3rem solid rgb(198, 83, 83); */
+  }
+ 
+  .popup{
+    width: 400px;
+    background-color: rgb(134, 225, 239);
+    border-radius: 6px;
+    position: absolute;
+    top: 0%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(0.1);
+    text-align: center;
+    padding: 0 30px 30px;
+    color: #fcf8f8;
+    visibility: hidden;
+    transition: transform 0.4s, top 0.4s;
+  }
+
+  .open-popup{
+    visibility: visible;
+    top: 50%;
+    transform: translate(-50%, -50%) scale(1);
+  }
+  
+  .popup button{
+    width: 100%;
+    margin-top: 50px;
+    padding: 10px 0;
+    background: #000000;
+    color:#fff;
+    border: 0;
+    outline: none;
+    font-size: 18px;
+    border-radius: 4px;
+    cursor: pointer;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+
+  }
+ 
+  @media only screen and (max-width: 600px) {
+    .container{
+      
+      flex-direction:column ;
+    }
+  }
+   
+  @media only screen and (max-width: 700px) {
+    .container{
+      flex-direction:column ;
+    }
+  }
+  
